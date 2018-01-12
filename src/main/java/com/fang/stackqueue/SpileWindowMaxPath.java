@@ -1,4 +1,4 @@
-package com.fang.backtracking;
+package com.fang.stackqueue;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -49,17 +49,17 @@ public class SpileWindowMaxPath {
         if (size == 0) return res;
         int begin;
         ArrayDeque<Integer> q = new ArrayDeque<>();
-        for (int i = 0; i < num.length; i++) {
-            begin = i - size + 1;
-            if (q.isEmpty())
+        for (int i = 0; i < num.length; i++) { //遍历所有元素
+            begin = i - size + 1; //找到开始比较的位置
+            if (q.isEmpty()) //为空，添加
                 q.add(i);
-            else if (begin > q.peekFirst()) //获取但不删除队首元素，失败则返回null
-                q.pollFirst();   //获取并删除队首元素，失败则返回null
+            else if (begin > q.peekFirst()) //first保留最大的数，判断最大的数是否在范围内
+                q.pollFirst();   //不在范围内，删除最大的数
 
-            while ((!q.isEmpty()) && num[q.peekLast()] <= num[i])
+            while ((!q.isEmpty()) && num[q.peekLast()] <= num[i]) //q不为空，且新比较的数较大，删除原有的last
                 q.pollLast();
-            q.add(i);
-            if (begin >= 0)
+            q.add(i); //添加第二大的数
+            if (begin >= 0) //有效结果
                 res.add(num[q.peekFirst()]);
         }
         return res;
