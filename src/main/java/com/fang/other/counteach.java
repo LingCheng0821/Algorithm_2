@@ -1,4 +1,4 @@
-package com.fang;
+package com.fang.other;
 
 import java.util.Scanner;
 
@@ -24,7 +24,7 @@ import java.util.Scanner;
  * 十位：if(N/10 %10 >1) f(N)=20 else if(N/10%10 == 1) f(N)=N%10+11 else 10
  * 百位：if(N /100 > 1) f(N)=100 else if(N/100 == 1) f(N)=N%10+1 else 0
  */
-public class 动态规划页码统计 {
+public class counteach {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();

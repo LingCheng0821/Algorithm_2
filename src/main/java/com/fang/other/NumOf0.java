@@ -1,4 +1,4 @@
-package com.fang;
+package com.fang.other;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ import java.util.Scanner;
  *              很显然，当0 <= n <= 4时，f(n!)=0。结合这两个公式，就搞定了这个问题了。
  * 例如：f(1000!) = 200 + f(200!) = 200 + 40 + f(40!) = 240 + 8 + f(8!) = 248 + 1 + f(1) =249
  */
-public class 末尾0的个数 {
+public class NumOf0 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

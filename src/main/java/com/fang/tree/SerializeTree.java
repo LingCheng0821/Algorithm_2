@@ -30,8 +30,7 @@ public class SerializeTree {
             sb.append(NULLSTR).append(SPILE);
             return;
         }
-        sb.append(root.val);
-        sb.append(',');
+        sb.append(root.val).append(SPILE);
         Serialize2(root.left, sb);
         Serialize2(root.right, sb);
     }

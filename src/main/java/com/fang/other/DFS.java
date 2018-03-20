@@ -1,4 +1,4 @@
-package com.fang;
+package com.fang.other;
 
 /**
  * 在一个N*M的地图上，有1个玩家、1个箱子、1个目的地以及若干障碍，其余是空地。玩家可以往上下左右4个方向移动，但是不能移动出地图或者移动到障碍里去。
@@ -12,7 +12,7 @@ package com.fang;
  * 输出描述:
  * 输出一个数字表示玩家最少需要移动多少步才能将游戏目标达成。当无论如何达成不了的时候，输出-1。
  */
-public class DFS推箱子 {
+public class DFS {
 
 
 }
