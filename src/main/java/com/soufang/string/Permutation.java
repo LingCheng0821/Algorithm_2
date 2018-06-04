@@ -11,7 +11,7 @@ import java.util.Collections;
 public class Permutation {
     //基于回溯法
     public ArrayList<String> Permutation(String str) {
-        ArrayList<String> res = new ArrayList<>();
+        ArrayList<String> res = new ArrayList<String>();
         if (str != null && str.length() > 0) {
             PermutationHelper(str.toCharArray(), 0, res);
             Collections.sort(res);

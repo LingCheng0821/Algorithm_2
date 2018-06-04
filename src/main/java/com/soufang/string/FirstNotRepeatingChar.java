@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
  */
 public class FirstNotRepeatingChar {
     public int FirstNotRepeatingChar(String str) {
-        LinkedHashMap <Character, Integer> map = new LinkedHashMap<>();
+        LinkedHashMap <Character, Integer> map = new LinkedHashMap<Character, Integer>();
 
         for(int i=0;i<str.length();i++){
             if(map.containsKey(str.charAt(i))){

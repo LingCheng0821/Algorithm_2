@@ -1,6 +1,7 @@
 package com.soufang.sort;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -81,7 +82,7 @@ public class GetLeastNumbers {
         for (Integer integer : maxHeap) {
             result.add(integer);
         }
-        return result;
+        return null;//Arrays.sort(result.toArray());
     }
 
 }
